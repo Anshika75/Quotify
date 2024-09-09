@@ -12,7 +12,7 @@ export class QuoteBoxComponent {
   currentQuote = quotes[0];
   quoteText = this.currentQuote.text;
   get author() {
-    return '~' + this.currentQuote.author;
+    return '~ ' + this.currentQuote.author;
   }
 
   getRandomQuote() {
