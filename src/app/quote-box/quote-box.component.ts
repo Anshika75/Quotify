@@ -11,7 +11,9 @@ import { quotes } from '../quotes';
 export class QuoteBoxComponent {
   currentQuote = quotes[0];
   quoteText = this.currentQuote.text;
-  quoteAuthor = this.currentQuote.author;
+  get author() {
+    return '~' + this.currentQuote.author;
+  }
 
   getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
