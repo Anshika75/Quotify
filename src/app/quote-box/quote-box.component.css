@@ -5,11 +5,16 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-box .quote-icon{
     position: absolute;
     left: 50%;
+    top: 0;
     height: 130px;
     width: 130px;
     transform: translate(-50%, -50%);
@@ -24,4 +29,16 @@
 .quote-box .quote-icon i{
     font-size: 4rem;
     color: #fefefe;
+}
+
+.quote-box p{
+    font-size: 2.5rem;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-box i{
+    font-size: 2rem;
+    color: #028090;
 }
