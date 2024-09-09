@@ -4,8 +4,24 @@
     background-color: #fefefe;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .quote-box .quote-icon{
-    
+    position: absolute;
+    left: 50%;
+    height: 130px;
+    width: 130px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #00bfb2;
+    background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+    display: grid;
+    place-items: center;
+
+}
+
+.quote-box .quote-icon i{
+    font-size: 4rem;
+    color: #fefefe;
 }
