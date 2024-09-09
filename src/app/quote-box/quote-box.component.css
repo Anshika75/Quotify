@@ -1,7 +1,11 @@
 .quote-box{
-    width: 1200px;
-    min-height: 600px;
+    width: 900px;
+    min-height: 450px;
     background-color: #fefefe;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box .quote-icon{
+    
 }
