@@ -18,6 +18,7 @@ export class QuoteBoxComponent {
   getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     this.currentQuote = quotes[randomIndex];
+    this.quoteText = this.currentQuote.text; 
   }
 
 }
