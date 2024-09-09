@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { quotes } from '../quotes';
 
 @Component({
   selector: 'app-quote-box',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './quote-box.component.css'
 })
 export class QuoteBoxComponent {
+  currentQuote = quotes[0];
+  quoteText = this.currentQuote.text;
+  quoteAuthor = this.currentQuote.author;
+
+  getRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    this.currentQuote = quotes[randomIndex];
+  }
 
 }
