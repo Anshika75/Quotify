@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { quotes } from '../quotes';
 
+const randomIndex = Math.floor(Math.random() * quotes.length);
+
 @Component({
   selector: 'app-quote-box',
   standalone: true,
@@ -9,7 +11,7 @@ import { quotes } from '../quotes';
   styleUrl: './quote-box.component.css'
 })
 export class QuoteBoxComponent {
-  currentQuote = quotes[0];
+  currentQuote = quotes[randomIndex];
   quoteText = this.currentQuote.text;
   get author() {
     return '~ ' + this.currentQuote.author;
